@@ -19,5 +19,4 @@ res = requests.get(API_URL)
 data = res.json()
 
 df = pd.DataFrame(data['daily'])
-
-print(df)
+df.to_sql('rain_prediction', engine, if_exists='replace')

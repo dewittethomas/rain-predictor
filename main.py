@@ -7,7 +7,7 @@ from skopt import BayesSearchCV
 from skopt.space import Real, Categorical, Integer
 import numpy as np
 
-debug = False
+debug = True
 
 def main():
     if debug:
